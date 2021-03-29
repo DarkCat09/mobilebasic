@@ -1,0 +1,8 @@
+SUB MAIN
+  DIM I AS INTEGER
+  FOR I=1 TO 10
+    PRINT I
+    SLEEP 1000
+  END FOR
+  PRINT "Finished"
+END SUB

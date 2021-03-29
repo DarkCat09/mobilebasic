@@ -1,0 +1,37 @@
+SUB MAIN
+  DIM ITEM(5) AS STRING
+  DIM FLAG(5) AS BOOLEAN
+  DIM I AS INTEGER
+  ITEM(1)="A"
+  ITEM(2)="B"
+  ITEM(3)="C"
+  ITEM(4)="D"
+  ITEM(5)="E"
+  FLAG(1)=FALSE
+  FLAG(2)=FALSE
+  FLAG(3)=FALSE
+  FLAG(4)=FALSE
+  FLAG(5)=FALSE
+  DIM R AS INTEGER
+  R = SELECTMULTI("OK Dialog", ITEM, FLAG, "OK", "", "", FALSE)
+  PRINT "R=" + STR$(R)
+  FOR I=1 TO 5
+    PRINT FLAG(I)
+  END FOR
+  R = SELECTMULTI("OK Dialog", ITEM, FLAG, "OK", "", "", TRUE)
+  PRINT "R=" + STR$(R)
+  FOR I=1 TO 5
+    PRINT FLAG(I)
+  END FOR
+  R = SELECTMULTI("Yes/No Dialog", ITEM, FLAG, "Yes", "", "No", FALSE)
+  PRINT "R=" + STR$(R)
+  FOR I=1 TO 5
+    PRINT FLAG(I)
+  END FOR
+  R = SELECTMULTI("Yes/Maybe/No Dialog", ITEM, FLAG, "Yes", "Maybe", "No", FALSE)
+  PRINT "R=" + STR$(R)
+  FOR I=1 TO 5
+    PRINT FLAG(I)
+  END FOR
+  PRINT "*** Finished ***"
+END SUB

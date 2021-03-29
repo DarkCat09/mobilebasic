@@ -1,0 +1,23 @@
+SUB MAIN
+  DIM I AS INTEGER
+  DIM ERR1 AS STRING
+  DIM ERR2 AS STRING
+  
+  TRY
+    TRY
+      FOR I=1 TO 10
+        PRINT I
+        IF (I=5) THEN
+          THROW "I=5"
+        END IF
+      END FOR
+    CATCH ERR1
+      PRINT "ERROR1> " + ERR1
+      THROW ERR1 + " THROWN by ERROR1"
+    ENDTRY
+  CATCH ERR2
+    PRINT "ERROR2> " + ERR2
+  END TRY
+  
+  PRINT "Program Finished"
+END SUB

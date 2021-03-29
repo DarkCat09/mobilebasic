@@ -1,0 +1,26 @@
+SUB MAIN
+  DIM I AS INTEGER
+  FOR I=1 TO 10
+    IF (I = 1) THEN
+      PRINT "ONE"
+    ELSEIF (I = 2) THEN
+      PRINT "TWO"
+    ELSEIF (I = 3) THEN
+      PRINT "THREE"
+    ELSEIF (I = 4) THEN
+      PRINT "FOUR"
+    ELSEIF (I = 5) THEN
+      PRINT "FIVE"
+    ELSEIF (I = 6) THEN
+      PRINT "SIX"
+    ELSEIF (I = 7) THEN
+      PRINT "SEVEN"
+    ELSEIF (I = 8) THEN
+      PRINT "EIGHT"
+    ELSEIF (I = 9) THEN
+      PRINT "NINE"
+    ELSE
+      PRINT "TEN"
+    END IF
+  END FOR
+END SUB

@@ -1,0 +1,24 @@
+SUB MAIN
+  DIM ITEM(5) AS STRING
+  DIM SELECTED AS INTEGER
+  DIM R AS INTEGER
+  ITEM(1)="A"
+  ITEM(2)="B"
+  ITEM(3)="C"
+  ITEM(4)="D"
+  ITEM(5)="E"
+  SELECTED=-1
+  R = SELECTONE("OK Dialog", ITEM, SELECTED, "OK", "", "", FALSE)
+  PRINT R
+  PRINT SELECTED
+  R = SELECTONE("OK Dialog", ITEM, SELECTED, "OK", "", "", TRUE)
+  PRINT R
+  PRINT SELECTED
+  R = SELECTONE("Yes/No Dialog", ITEM, SELECTED, "Yes", "", "No", FALSE)
+  PRINT R
+  PRINT SELECTED
+  R = SELECTONE("Yes/Maybe/No Dialog", ITEM, SELECTED, "Yes", "Maybe", "No", FALSE)
+  PRINT R
+  PRINT SELECTED
+  PRINT "*** Finished ***"
+END SUB

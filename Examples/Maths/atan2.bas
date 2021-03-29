@@ -1,0 +1,23 @@
+SUB MAIN
+  PRINT "---- ATAN2D (Degrees) ----"
+
+  PRINT "ATAN2D(0.0, 0.0)=" + STR$(ATAN2D(0.0, 0.0))
+  PRINT "ATAN2D(10.0, 10.0)=" + STR$(ATAN2D(10.0, 10.0))
+  PRINT "ATAN2D(10.0, 0.0)=" + STR$(ATAN2D(10.0, 0.0))
+  PRINT "ATAN2D(10.0, -10.0)=" + STR$(ATAN2D(10.0, -10.0))
+  PRINT "ATAN2D(0.0, -10.0)=" + STR$(ATAN2D(0.0, -10.0))
+  PRINT "ATAN2D(-10.0, -10.0)=" + STR$(ATAN2D(-10.0, -10.0))
+  PRINT "ATAN2D(-10.0, 0.0)=" + STR$(ATAN2D(-10.0, 0.0))
+  PRINT "ATAN2D(-10.0, 10.0)=" + STR$(ATAN2D(-10.0, 10.0))
+  
+  PRINT "\n---- ATAN2 (Radians) ----"
+
+  PRINT "ATAN2(0.0, 0.0)=" + STR$(ATAN2(0.0, 0.0))
+  PRINT "ATAN2(10.0, 10.0)=" + STR$(ATAN2(10.0, 10.0))
+  PRINT "ATAN2(10.0, 0.0)=" + STR$(ATAN2(10.0, 0.0))
+  PRINT "ATAN2(10.0, -10.0)=" + STR$(ATAN2(10.0, -10.0))
+  PRINT "ATAN2(0.0, -10.0)=" + STR$(ATAN2(0.0, -10.0))
+  PRINT "ATAN2(-10.0, -10.0)=" + STR$(ATAN2(-10.0, -10.0))
+  PRINT "ATAN2(-10.0, 0.0)=" + STR$(ATAN2(-10.0, 0.0))
+  PRINT "ATAN2(-10.0, 10.0)=" + STR$(ATAN2(-10.0, 10.0))
+END SUB
