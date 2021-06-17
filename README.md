@@ -19,4 +19,6 @@
 `cars` - an interesting **working** game on MobileBASIC! (I did it :slightly_smiling_face: )  
 Based on my accelerometer test (`test/accel.bas`). The game can detect screen rotation automatically.
 
+`tictactoe` - classic Tic-tac-toe or Crosses&Noughts. This game **works** too!
+
 `temp` - a randomizer, that can be used instead of wireless thermometers... (Do you remember that joke?)
